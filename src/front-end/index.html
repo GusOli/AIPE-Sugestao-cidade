@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>App de Sugestões</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div class="container">
+    <h1>Envie sua sugestão para melhorar a cidade!</h1>
+
+    <div id="summary" class="summary">
+        Complete o formulário:
+    </div>
+
+    <form id="suggestion-form" class="form">
+        <input type="text" id="name" placeholder="Seu nome" required />
+        <input type="email" id="email" placeholder="Seu email" required />
+        <textarea id="suggestion" placeholder="Descreva sua sugestão" required></textarea>
+        <button type="submit">Enviar</button>
+    </form>
+
+    <h2>Histórico de Sugestões:</h2>
+    <div id="suggestions"></div>
+</div>
+
+<script type="module" src="app.js"></script>
+</body>
+</html>
